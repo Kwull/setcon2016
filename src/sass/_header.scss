@@ -1,0 +1,38 @@
+.main-header {
+    position: fixed;
+    height: 50px;
+    padding: 0 10%;
+    top: 0;
+    @include flex-row;
+
+    @media #{$media-1280} {
+        padding: 0 5%;
+    }
+
+    .menu-list {
+        ul {
+            @include flex-row;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-list__item {
+            list-style: none;
+           
+            padding: 5px 20px; //percents didn't work in FF
+            font-size: $font-size-small;
+            color: $rose;
+
+            &:hover {
+                background: $rose;
+                color: $white;
+                cursor: pointer;
+            }
+
+            .menu-list__item__link {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

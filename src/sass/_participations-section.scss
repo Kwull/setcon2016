@@ -1,0 +1,21 @@
+.participations-section {
+    @include flex-row;
+    padding: 1% 10%;
+    color:  $white;
+
+    .participations-section__item {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
+        .participations-section__item__number {
+                font-size: $font-size-xx-large;
+        }
+
+        .participations-section__text {
+            font-size: $font-size-large;
+        }
+    }
+}
