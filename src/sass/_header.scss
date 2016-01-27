@@ -32,6 +32,8 @@
                 &.menu-list__item--active {
                     background: $rose;
                     color: $white;
+                    border-bottom: none;
+                    
                     &:hover {
                         border-bottom: none;
                     }

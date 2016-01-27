@@ -439,7 +439,8 @@ img {
       border-bottom: 2px solid #fff; }
       .main-header .main-header__wrapper .menu-list .menu-list__item.menu-list__item--active {
         background: #992142;
-        color: #fff; }
+        color: #fff;
+        border-bottom: none; }
         .main-header .main-header__wrapper .menu-list .menu-list__item.menu-list__item--active:hover {
           border-bottom: none; }
       .main-header .main-header__wrapper .menu-list .menu-list__item:hover {
