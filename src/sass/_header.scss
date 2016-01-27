@@ -4,6 +4,7 @@
     padding: 0 10%;
     top: 0;
     @include flex-row;
+    z-index: $z-index-high;
 
     @media #{$media-1280} {
         padding: 0 5%;

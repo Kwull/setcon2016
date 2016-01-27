@@ -1,3 +1,22 @@
 .venue-section {
-	
+    color: $white;
+    padding: 2% 10%;
+    font-size: $font-size-medium;
+
+	.venue-section__map, 
+    .venue-section__description {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .venue-section__description {
+        vertical-align: top;
+        padding-left: 10%;
+        text-align: center;
+    }
+}
+
+.start-time-section {
+    color: $white;
+    text-align: center;
 }

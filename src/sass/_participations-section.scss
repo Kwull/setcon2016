@@ -1,7 +1,8 @@
 .participations-section {
     @include flex-row;
-    padding: 1% 10%;
+    padding: 0 10% 2%;
     color:  $white;
+    height: 150px;
 
     .participations-section__item {
         text-align: center;
@@ -11,7 +12,7 @@
         }
 
         .participations-section__item__number {
-                font-size: $font-size-xx-large;
+            font-size: $font-size-xx-large;
         }
 
         .participations-section__text {

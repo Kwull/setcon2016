@@ -34,11 +34,9 @@ img {
     background: $rose;
 }
 
-
 .background-dark-red {
     background: $dark-red;
 }
-
 
 @mixin flex-row {
     display: flex;
@@ -51,17 +49,5 @@ img {
 @import 'event-section';
 @import 'participations-section';
 @import 'conference-description';
-
-// .main-diagonal {
-
-//     &:before {
-//         content: '';
-//         position: absolute;
-//         width: 100%;
-//         height: 25px;
-//         background: linear-gradient(38.5deg,transparent 50% ,$white 50% );
-//         right: 0;
-//         bottom: -25px;     
-        
-//     }
-// }
+@import 'sloping-blocks';
+@import 'venue-section';
