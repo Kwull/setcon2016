@@ -1,4 +1,4 @@
-window.onload = (function() {
+window.onload = function() {
     var myLatLng = {
         lat: 52.0931856,
         lng: 23.6793996
@@ -15,4 +15,4 @@ window.onload = (function() {
         position: myLatLng,
         map: map
     });
-})();
+};
