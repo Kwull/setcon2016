@@ -25,10 +25,20 @@
                 padding: 5px 20px; //percents didn't work in FF
                 font-size: $font-size-small;
                 color: $rose;
-                &:hover {
+                cursor: pointer;
+                margin-right: 5px;
+                border-bottom: 2px solid $white;
+
+                &.menu-list__item--active {
                     background: $rose;
                     color: $white;
-                    cursor: pointer;
+                    &:hover {
+                        border-bottom: none;
+                    }
+                }
+
+                &:hover {
+                   border-bottom: 2px solid $rose;
                 }
 
                 .menu-list__item__link {

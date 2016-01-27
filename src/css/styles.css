@@ -433,11 +433,17 @@ img {
       list-style: none;
       padding: 5px 20px;
       font-size: 0.875rem;
-      color: #992142; }
-      .main-header .main-header__wrapper .menu-list .menu-list__item:hover {
+      color: #992142;
+      cursor: pointer;
+      margin-right: 5px;
+      border-bottom: 2px solid #fff; }
+      .main-header .main-header__wrapper .menu-list .menu-list__item.menu-list__item--active {
         background: #992142;
-        color: #fff;
-        cursor: pointer; }
+        color: #fff; }
+        .main-header .main-header__wrapper .menu-list .menu-list__item.menu-list__item--active:hover {
+          border-bottom: none; }
+      .main-header .main-header__wrapper .menu-list .menu-list__item:hover {
+        border-bottom: 2px solid #992142; }
       .main-header .main-header__wrapper .menu-list .menu-list__item .menu-list__item__link {
         text-decoration: none;
         color: inherit; }
@@ -492,7 +498,7 @@ img {
       font-size: 1.5rem; }
 
 .conference-description {
-  padding: 5% 0; }
+  padding: 6% 0; }
   .conference-description .conference-description__text {
     font-size: 1.75rem;
     color: #000;
