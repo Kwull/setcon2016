@@ -1,0 +1,38 @@
+{
+  "name": "setcon2016",
+  "version": "1.0.0",
+  "description": "SETCON 2016 Conference",
+  "main": "index.html",
+  "scripts": {
+    "compile-sass": "node_modules/.bin/node-sass -o build/css src/sass/main.scss --source-map build/css",
+    "prefix": "node_modules/.bin/postcss --use autoprefixer build/css/main.css -d build/css",
+    "css": "npm run compile-sass && npm run prefix",
+    "js": "node_modules/.bin/copycopy src/js/*.js build/js",
+    "img": "node_modules/.bin/copycopy src/img/* build/img",
+    "html": "node_modules/.bin/copycopy src/*.html build",
+    "build": "npm run css && npm run js && npm run img && npm run html",
+    "publish": "node_modules/.bin/gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quozd/setcon2016.git"
+  },
+  "keywords": [
+    "SETCON",
+    "2016",
+    "Conference"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quozd/setcon2016/issues"
+  },
+  "homepage": "https://quozd.github.io/setcon2016/",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "copycopy": "0.0.2",
+    "gh-pages": "^0.8.0",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.4.0"
+  }
+}
