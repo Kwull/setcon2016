@@ -4,7 +4,7 @@
   "description": "SETCON 2016 Conference",
   "main": "index.html",
   "scripts": {
-    "compile-sass": "node_modules/.bin/node-sass -o build/css src/sass/main.scss --source-map build/css",
+    "compile-sass": "node_modules/.bin/node-sass -o build/css src/styles/main.scss --source-map build/css",
     "prefix": "node_modules/.bin/postcss --use autoprefixer build/css/main.css -d build/css",
     "css": "npm run compile-sass && npm run prefix",
     "js": "node_modules/.bin/copycopy src/js/*.js build/js",
