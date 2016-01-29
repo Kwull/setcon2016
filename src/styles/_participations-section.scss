@@ -1,10 +1,22 @@
 .participations-section {
     color:  $white;
-    height: 150px;
 
     .participations-section--wrapper {
-        padding: 1% 10% 0;
-        @include flex-row;
+        padding: 1% 10% 2%;
+        display: flex;
+
+        .participations-section__row {
+            @include flex-row-space-around;
+            width: 100%;
+
+            @media #{$media-480} { 
+                flex-direction: column;
+
+                .participations-section__item {
+                    padding-bottom: 5%;
+                }
+            }
+        }
     }
 
     .participations-section__item {

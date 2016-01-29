@@ -41,8 +41,17 @@ img {
 @mixin flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+}
+
+@mixin flex-row-space-around {
+    @include flex-row;
+    justify-content: space-around;
+}
+
+@mixin flex-row-space-between {
+    @include flex-row;
+    justify-content: space-between;
 }
 
 @import 'header';
@@ -51,3 +60,4 @@ img {
 @import 'conference-description';
 @import 'sloping-blocks';
 @import 'venue-section';
+@import 'burger-button';

@@ -4,12 +4,20 @@
     height: 500px;
     width: 100%;
 
+    @media #{$media-480} {
+        height: 250px;
+    }
+
     .event-section__content {
         text-align: center;
         padding: 5% 0;
 
         .event-section__content__logo {
             padding-top: 2%;
+
+            @media #{$media-480} {
+                width: 50%;
+            } 
         }
 
         .event-section__content__text {
