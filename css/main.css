@@ -522,6 +522,9 @@ img {
       color: #fff;
       font-size: 1.5rem;
       padding: 15% 0 0 0; }
+      @media only screen and (max-width: 480px) {
+        .event-section .event-section__content .event-section__content__text {
+          padding: 5% 0 0 0; } }
       .event-section .event-section__content .event-section__content__text p {
         margin: 0; }
 
