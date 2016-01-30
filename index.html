@@ -5,17 +5,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SETCON BREST 2016</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    <header class="main-header background-white main-diagonal--bottom-white">
+<body onload="mapModule.initMap()">
+    <header class="main-header background-white main-diagonal--bottom-white" id="mobile-menu">
         <div class="main-header__wrapper">
-            <div class="logo">
-                <img src="img/setcon2016_logo.png" alt="SETCON small logo">
+            <div class="main-header__title">
+                <a href="/" class="main-header__title__logo-link">
+                    <img src="img/setcon2016_logo.png" alt="SETCON small logo">
+                </a>
+                <div class="burger-button main-header__title__toggle-button" onclick="menuToogler.toggleMenu('menu-list--opened')">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
             </div>
             <nav class="menu-list">
-                <ul>
+                <ul class="menu-list__items">
                     <li class="menu-list__item">
                         <a href="" class="menu-list__item__link">Докладчики</a>
                     </li>
@@ -40,21 +47,25 @@
     </section>
     <section class="participations-section background-dark-red counter-diagonal--top-dark-red">
         <div class="participations-section--wrapper">
-            <div class="participations-section__item">
-                <p class="participations-section__item__number">2</p>
-                <p class="participations-section__text">потока</p>
+            <div class="participations-section__row">
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">2</p>
+                    <p class="participations-section__text">потока</p>
+                </div>
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">200</p>
+                    <p class="participations-section__text">участников</p>
+                </div>
             </div>
-            <div class="participations-section__item">
-                <p class="participations-section__item__number">200</p>
-                <p class="participations-section__text">участников</p>
-            </div>
-            <div class="participations-section__item">
-                <p class="participations-section__item__number">8</p>
-                <p class="participations-section__text">докладов</p>
-            </div>
-            <div class="participations-section__item">
-                <p class="participations-section__item__number">14</p>
-                <p class="participations-section__text">экспертов</p>
+            <div class="participations-section__row">
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">8</p>
+                    <p class="participations-section__text">докладов</p>
+                </div>
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">14</p>
+                    <p class="participations-section__text">экспертов</p>
+                </div>
             </div>
         </div>
     </section>
@@ -76,6 +87,6 @@
     </section>
     <section class="time-table-section background-white counter-diagonal--top-white"></section>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
 </body>
 </html>
