@@ -1,8 +1,15 @@
 .event-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
     background: url('../img/setcon2016_hero.png') center no-repeat;
     height: 500px;
     width: 100%;
+
+    @media #{$media-780} {
+        height: 350px;
+    }
 
     @media #{$media-480} {
         height: 250px;
@@ -23,7 +30,7 @@
         .event-section__content__text {
             color: $white;
             font-size: $font-size-large;
-            padding:  5% 0;
+            padding: 15% 0 0 0;
 
             p {
                 margin: 0;
