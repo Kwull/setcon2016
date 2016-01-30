@@ -11,7 +11,8 @@
     "img": "node_modules/.bin/copycopy src/img/* build/img",
     "html": "node_modules/.bin/copycopy src/*.html build",
     "build": "npm run css && npm run js && npm run img && npm run html",
-    "publish": "node_modules/.bin/gh-pages -d build"
+    "publish-to-gh": "node_modules/.bin/gh-pages -d build -m 'Recent updates of SETCON Website'",
+    "publish": "npm run build && npm run publish-to-gh"
   },
   "repository": {
     "type": "git",

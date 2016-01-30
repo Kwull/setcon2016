@@ -32,6 +32,10 @@
             font-size: $font-size-large;
             padding: 15% 0 0 0;
 
+            @media #{$media-480} {
+                padding: 5% 0 0 0;
+            }
+
             p {
                 margin: 0;
             }
