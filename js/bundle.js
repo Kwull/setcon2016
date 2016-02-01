@@ -25,11 +25,8 @@ var mapModule = (function() {
 
 var menuToogler = (function() {
     return {
-        toggleMenu: function(classToggleName) { 
-            var classList = document.getElementById('mobile-menu').classList;
-            if(classList.contains(classToggleName))
-                classList.remove(classToggleName)
-            else classList.add(classToggleName);
+        toggleMenu: function(classToggleName) {
+            document.getElementById('mobile-menu').classList.toggle(classToggleName);
         }
     };
 })();

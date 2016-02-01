@@ -381,6 +381,19 @@ img {
 .background-dark-red {
   background: #63051f; }
 
+.col-1 {
+  width: 100%; }
+
+.col-1-2 {
+  width: 50%; }
+
+@media only screen and (max-width: 480px) {
+  .mob-1 {
+    width: 100%; } }
+
+.col-1-3 {
+  width: 33.333333%; }
+
 .main-header {
   position: fixed;
   height: 50px;
@@ -506,10 +519,7 @@ img {
   width: 100%; }
   @media only screen and (max-width: 780px) {
     .event-section {
-      height: 350px; } }
-  @media only screen and (max-width: 480px) {
-    .event-section {
-      height: 250px; } }
+      height: 400px; } }
   .event-section .event-section__content {
     text-align: center;
     padding: 5% 0; }
@@ -517,7 +527,7 @@ img {
       padding-top: 2%; }
       @media only screen and (max-width: 480px) {
         .event-section .event-section__content .event-section__content__logo {
-          width: 50%; } }
+          width: 80%; } }
     .event-section .event-section__content .event-section__content__text {
       color: #fff;
       font-size: 1.5rem;
@@ -552,8 +562,7 @@ img {
               align-items: center;
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
-              justify-content: space-around;
-      width: 100%; }
+              justify-content: space-around; }
       @media only screen and (max-width: 780px) {
         .participations-section .participations-section--wrapper .participations-section__row {
           -webkit-box-orient: vertical;
@@ -563,6 +572,13 @@ img {
                   flex-direction: column; }
           .participations-section .participations-section--wrapper .participations-section__row .participations-section__item {
             padding-bottom: 5%; } }
+    @media only screen and (max-width: 480px) {
+      .participations-section .participations-section--wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .participations-section .participations-section__item {
     text-align: center; }
     .participations-section .participations-section__item p {
@@ -706,10 +722,12 @@ img {
 .time-table-section {
   height: 100px; }
 
-.burger-button .burger-line {
-  display: block;
-  width: 30px;
-  height: 2px;
-  margin-bottom: 5px;
-  background: #63051f; }
+.burger-button {
+  cursor: pointer; }
+  .burger-button .burger-line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    background: #63051f; }
 /*# sourceMappingURL=main.css.map */
