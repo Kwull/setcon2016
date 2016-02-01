@@ -8,11 +8,7 @@
     width: 100%;
 
     @media #{$media-780} {
-        height: 350px;
-    }
-
-    @media #{$media-480} {
-        height: 250px;
+        height: 400px;
     }
 
     .event-section__content {
@@ -23,7 +19,7 @@
             padding-top: 2%;
 
             @media #{$media-480} {
-                width: 50%;
+                width: 80%;
             } 
         }
 

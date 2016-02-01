@@ -7,8 +7,7 @@
 
         .participations-section__row {
             @include flex-row-space-around;
-            width: 100%;
-
+            
             @media #{$media-780} { 
                 flex-direction: column;
 
@@ -16,6 +15,10 @@
                     padding-bottom: 5%;
                 }
             }
+        }
+
+        @media #{$media-480} {
+            flex-direction: column;
         }
     }
 
