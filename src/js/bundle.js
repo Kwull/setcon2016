@@ -1,7 +1,7 @@
 var mapModule = (function() {
     var myLatLng = {
-        lat: 52.1436483,
-        lng: 23.6816669
+        lat: 52.1441955,
+        lng: 23.6818696
     };
 
     function initMapWithMarker() {
