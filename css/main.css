@@ -690,12 +690,26 @@ img {
     .venue-section {
       padding-top: 8%; } }
   .venue-section .venue-section__map__action {
-    width: 80%;
+    width: 45%;
     height: 250px;
-    border: 3px solid #63051f; }
+    border: 3px solid #63051f;
+    overflow: hidden;
+    float: left; }
     @media only screen and (max-width: 780px) {
       .venue-section .venue-section__map__action {
         width: 100%; } }
+  .venue-section .venue-section__ibc {
+    width: 50%;
+    height: 250px;
+    border: 3px solid #63051f;
+    overflow: hidden;
+    background-image: url("../img/ibc.png");
+    background-size: 100% 100%; }
+    @media only screen and (max-width: 780px) {
+      .venue-section .venue-section__ibc {
+        width: 100%;
+        height: 100%;
+        min-height: 250px; } }
   .venue-section .venue-section__map,
   .venue-section .venue-section__description {
     display: inline-block;
