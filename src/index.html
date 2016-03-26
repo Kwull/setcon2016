@@ -84,9 +84,293 @@
         </div>
     </section>
     <section class="start-time-section background-dark-red counter-diagonal--top-dark-red">
-        <p class="start-time-section__text">Начало в 10.30</p>
+        <p class="start-time-section__text">Начало в 10.00</p>
     </section>
-    <section class="time-table-section background-white counter-diagonal--top-white"></section>
+    <section class="time-table-section background-white counter-diagonal--top-white">
+
+        <h3 class="registration">10:00</h3> <!-- registration -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event red-hall">Красный зал</span>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event green-hall">Зеленый зал</span>
+                </div>
+                <div style="clear: both"></div>
+                <span class="time-table-section__event break">Регистрация участников</span>
+            </div>
+        </div>
+
+        <h3>10:30</h3> <!-- opening -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event">Открытие конференции</span>
+                <div class="time-table-section__event__details__container">
+                    <div class="time-table-section__event__details">
+                        <!-- speakers -->
+                        <div>
+                            <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/uladzimir_kazakevich.jpg" alt="avatar for Uladzimir Kazakevich">
+                                </span>
+                                <h2>Владимир Казакевич</h2>
+                                <div class="time-table-section__event__person__bio">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nulla diam, imperdiet ut luctus eu, tristique ac magna. Vestibulum porttitor faucibus lorem, sit amet tincidunt justo rutrum eu. Aliquam ut sem in dui rhoncus pretium et pharetra est. Integer magna lacus, aliquam iaculis enim et, condimentum scelerisque neque
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>11:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event">Have you Dockerized?</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/aliaksei_zharnasek.jpg" alt="avatar for Aliaksei Zharnasek">
+                                </span>
+                                    <h2>Алексей Жерносек</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Что такое Docker? Чем он отличается от AWS/Vagrant/Chef/Azure? Чем оно мне поможет? Ненормальное использование контейнеров :)
+                                        <br><br>
+                                        Keywords: docker, container, virtualization, microservices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event">Что такое высокая доступность и как это приготовить?</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/mikhail_liulkovich.jpg" alt="avatar for mikhail liulkovich">
+                                </span>
+                                    <h2>Михаил Люлькович</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Каждый день бизнес теряет миллионы долларов всего лиш на том что их сайт временно стал недоступен. А многие с этим борятся и успешно, но тем не менее мы с вами из года в год мы все чаще слышим слова Avaiability, Fault tolerance и другие. Давайте же разберемся с тем что это такое и какие основные инструменты есть чтоб с этим недугом бороться?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>11:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>12:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event">Эффективные подходы к тестированию web-сервисов</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/uladzimir_ramaniuk.jpg" alt="avatar for Uladzimir Ramaniuk">
+                                </span>
+                                    <h2>Владимир Романюк</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Тестирование web-сервисов - важная часть интеграционного тестирования на web-проектах. Существуют различные подходы к тестированию web-сервисов, выбор каждого из них зависит от специфики поставленной задачи. В своём докладе я расскажу, что такое web-сервисы, как их тестировать и как это тестирование можно автоматизировать.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event">BigData от концепции к промышленному применению.</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/uladzimir_ramaniuk.jpg" alt="avatar for Uladzimir Ramaniuk">
+                                </span>
+                                    <h2>Илья Лапитан</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Каждый день мы производим 2,5 триллиона байт данных. Примерно 90% данных в современном мире была создана за последние два года. Данные поступают отовсюду: датчики, финансовые транзакции, социальные медиа,  умная бытовая техника.
+                                        <br><br>
+                                        Для обработки этих данных была разработана куча различных технологий: Hadoop, Hive, Kafka, Storm и другие. Давайте подробнее разберемся, как использовать эти технологии для перехода от реализации концепции к промышленному применению.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>12:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>13:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event">Тестирование Производительности</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/dzmitry_dzemidziuk.jpg" alt="avatar for dzmitry dzemidziuk">
+                                    <img src="img/krystsina_bakatsiuk.jpg" alt="avatar for krystsina bakatsiuk">
+                                </span>
+                                    <h2>Дмитрий Демедюк, Кристина Бакатюк</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Что делать если вы обычный специалист в области функционального тестирования, заказчик просит протестировать производительность веб-приложения? Какие существуют основные подходы к тестированию производительности веб-приложений и какой из них лучше выбрать? Какие существуют типы нагрузочных тестов?
+                                        <br><br>
+                                        В докладе будет рассмотрено:<br>
+                                        - Server-side тестирование производительности<br>
+                                        - UI-side тестирование производительности<br>
+                                        - Примеры скриптов в JMeter<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event">Эффективный CPU</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/aliaksander_stsepaniuk.jpg" alt="avatar for aliaksander stsepaniuk">
+                                </span>
+                                    <h2>Александр Степанюк</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Можно ли заставить микропроцессор работать эффективнее, когда, казалось бы, что всё уже максимально оптимизировано? Как это сделать?<br>
+                                        На эти вопросы легко ответить, зная простые основные принципы работы микропроцессора.<br><br>
+                                        В докладе будет рассмотрено:<br>
+                                        - Как работает современный микропроцессор.<br>
+                                        - Зачем в микропроцессоре конвейер.<br>
+                                        - Что такое предсказание ветвлений.<br>
+                                        - Как работает кеш микропроцессора.<br>
+                                        <br>
+                                        На примерах кода будут показаны паттерны и антипаттерны написания высокопроизводительного кода.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>13:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>14:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event">Universal Windows Platform (UWP) везде!</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/aliaksandr_charnou.jpg" alt="avatar for aliaksandr charnou">
+                                    <img src="img/uladzislau_basin.jpg" alt="avatar for uladzislau basin">
+                                </span>
+                                    <h2>Александр Чернов, Влад Басин</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Майкрософт в последнее время все активнее продвигает идею приложений, которые могут запускаться везде - от браслетов, телефонов и планшетов до настольных компьютеров и очков дополненной реальности HoloLens. Мы уже сейчас можем вести разработку в таком ключе, но вопросов по умолчанию много: как адаптируются приложения по разные устройства, все ли так радужно и хорошо, удобно ли так разрабатывать или лучше по старинке? Давайте вместе ответим на эти и другие вопросы!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event">Пакуем Web как Боги</span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/sergey_arzamasov.jpg" alt="avatar for sergey arzamasov">
+                                </span>
+                                    <h2>Сергей Арзамасов</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Современный frontend не мыслим без автоматических средств сборки, которые позволяют забыть о рутинных действиях, тем самым ускорить процесс разработки и уменьшить нашу головную боль. Однако существет большое количество инструментов, которые решают данные проблемы. Webpack является одним из таких инструментов. Что такое Webpack? Где и когда его нужно применять? Какие у него преимущества перед конкурентами? Зачем мне Webpack, если я использую Grunt/Gulp? На эти и другие вопросы я постараюсь ответить.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>14:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>15:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event">Ленивая история про ленивый JavaScript</span>
+                <div class="time-table-section__event__details__container">
+                    <div class="time-table-section__event__details">
+                        <div>
+                            <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/denis_vlassenko.jpg" alt="avatar for denis vlassenko">
+                                </span>
+                                <h2>Дэн Власенко</h2>
+                                <div class="time-table-section__event__person__bio">
+                                    Бытует мнение, что программисты очень ленивы. Ни каждый ли из них всю жизнь ищет свой философский камень – супер-платформу для супербыстрой разработки супер-приложений, имея которую стало бы возможно писать меньше, но создавать больше? И не найдя, разрабатывает свою.<br><br>
+                                    Потом наступает особый день, и великая мудрость озаряет их разум, и ленивые программисты начинают создавать ленивые алгоритмы; они потребляют меньше ресурсов и реже нуждаются в оптимизации. И прогресс продолжается.<br><br>
+                                    Хотя стандартная модель вычислений в JavaScript отнюдь не ленива, незначительная трансформация мышления, парочка правильных библиотек и крупица хитрости достаточны для того, чтобы дать центральному процессору еще чуть-чуть релакса.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>16:00</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Закрытие конференции</span>
+            </div>
+        </div>
+    </section>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script type="text/javascript" src="js/bundle.js"></script>
 </body>
