@@ -2,7 +2,7 @@
   height: 100px;
 
   h3{
-    font-size: 16px;
+    font-size: $font-size-normal;
     width: 52px;
     clear: left;
     color: #999;
@@ -82,12 +82,6 @@
               margin-bottom: 10px;
             }
 
-            hr {
-              clear: both;
-              border: 0;
-              border-bottom: 1px solid rgba(0,0,0,.1);
-            }
-
             .time-table-section__event__person{
               width: 98%;
               text-align: left;
@@ -97,10 +91,8 @@
               margin: 0;
               padding: 0;
 
-
               .time-table-section__event__person__avatar{
                 width: 100px;
-                //height: 100px;
                 line-height: 40px;
                 float: left;
                 margin-right: 20px;
@@ -118,7 +110,7 @@
             }
 
               h2 {
-                font-size: 16px;
+                font-size: $font-size-normal;
                 font-weight: 700;
                 margin: 8px 0 3px;
               }
