@@ -1,0 +1,32 @@
+.main-footer {
+  position: absolute;
+  margin-top: 3rem;
+
+  .main-footer__image {
+    background: url('../img/setcon2016_hero.png') center no-repeat;
+    height: 300px;
+    width: 100%;
+
+    @media #{$media-780} {
+      height: 200px;
+    }
+  }
+  
+  .main-footer__sloping-block {
+      position: relative;
+      z-index: $z-index-high;
+  }
+
+  .main-footer__info {
+    @include flex-row;
+    height: 50px;
+    justify-content: center;
+    color: $white;
+    font-size: $font-size-small;
+    
+    .main-footer__info__email {
+        padding-left: 5px;
+        color: $white;
+    }
+  }
+}

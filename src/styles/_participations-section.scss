@@ -7,6 +7,7 @@
 
         .participations-section__row {
             @include flex-row-space-around;
+            padding: 10px 0;
             
             @media #{$media-780} { 
                 flex-direction: column;

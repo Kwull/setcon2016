@@ -1,5 +1,15 @@
 .time-table-section {
   height: 100px;
+  margin-top: 3rem;
+  padding: 0 10%;
+
+  @media #{$media-1280} {
+      padding: 0 5%;
+  }
+  
+  @media #{$media-780} {
+      padding: 0 1%;
+  }
 
   h3{
     font-size: $font-size-normal;
@@ -20,13 +30,24 @@
       padding-top: 106px;
     }
   }
+  
+  .time-table-section__anchor {
+      position: relative;
+      display: block;
+      visibility: hidden;
+      top: -50px;
+  }
 
   .time-table-section__container {
-    border-bottom: 2px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
     padding-top: 3px;
     border-left: 1px solid rgba(0,0,0,.10);
     margin: -1px 0 0 68px;
     overflow: auto;
+    
+    &:last-child {
+        border-bottom: none;
+    }
 
     .break {
       //background-color: $postel-yellow;
@@ -122,6 +143,10 @@
               .time-table-section__event__person__bio {
                 margin-left: 120px;
                 margin-bottom: 20px;
+                
+                @media #{$media-480} {
+                    margin-left: auto;
+                }
               }
             }
           }
