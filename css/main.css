@@ -562,7 +562,8 @@ img {
               align-items: center;
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
-              justify-content: space-around; }
+              justify-content: space-around;
+      padding: 10px 0; }
       @media only screen and (max-width: 780px) {
         .participations-section .participations-section--wrapper .participations-section__row {
           -webkit-box-orient: vertical;
@@ -690,7 +691,7 @@ img {
     .venue-section {
       padding-top: 8%; } }
   .venue-section .venue-section__map__action {
-    width: 45%;
+    width: 95%;
     height: 250px;
     border: 3px solid #63051f;
     overflow: hidden;
@@ -698,6 +699,8 @@ img {
     @media only screen and (max-width: 780px) {
       .venue-section .venue-section__map__action {
         width: 100%; } }
+    .venue-section .venue-section__map__action img {
+      max-height: none !important; }
   .venue-section .venue-section__ibc {
     width: 50%;
     height: 250px;
@@ -733,9 +736,6 @@ img {
     .start-time-section {
       padding: 0; } }
 
-.time-table-section {
-  height: 100px; }
-
 .burger-button {
   cursor: pointer; }
   .burger-button .burger-line {
@@ -744,4 +744,150 @@ img {
     height: 2px;
     margin-bottom: 5px;
     background: #63051f; }
+
+.time-table-section {
+  height: 100px;
+  margin-top: 3rem;
+  padding: 0 10%; }
+  @media only screen and (max-width: 1280px) {
+    .time-table-section {
+      padding: 0 5%; } }
+  @media only screen and (max-width: 780px) {
+    .time-table-section {
+      padding: 0 1%; } }
+  .time-table-section h3 {
+    font-size: 1rem;
+    width: 52px;
+    clear: left;
+    color: #999;
+    float: left;
+    text-align: right;
+    z-index: 1;
+    font-weight: lighter;
+    padding-top: 8px; }
+  .time-table-section .registration {
+    padding-top: 56px; }
+    @media only screen and (max-width: 780px) {
+      .time-table-section .registration {
+        padding-top: 106px; } }
+  .time-table-section .time-table-section__anchor {
+    position: relative;
+    display: block;
+    visibility: hidden;
+    top: -50px; }
+  .time-table-section .time-table-section__container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 3px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    margin: -1px 0 0 68px;
+    overflow: auto; }
+    .time-table-section .time-table-section__container:last-child {
+      border-bottom: none; }
+    .time-table-section .time-table-section__container .time-table-section__container_inner {
+      padding: 10px 0 0 15px;
+      position: relative; }
+      .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__red-hall {
+        width: 50%;
+        float: left; }
+        @media only screen and (max-width: 780px) {
+          .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__red-hall {
+            width: 100%; } }
+      .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__green-hall {
+        width: 50%;
+        overflow: hidden; }
+        @media only screen and (max-width: 780px) {
+          .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__green-hall {
+            width: 100%; } }
+      .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event {
+        float: left;
+        margin: 0 12px 12px 0;
+        position: relative;
+        padding: 9px;
+        font-size: 1.5rem; }
+      .time-table-section .time-table-section__container .time-table-section__container_inner .red-hall,
+      .time-table-section .time-table-section__container .time-table-section__container_inner .green-hall {
+        font-size: 0.875rem;
+        text-transform: uppercase; }
+      .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container {
+        clear: both;
+        margin: 0 15px 20px; }
+        .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details {
+          border-left: 0;
+          clear: left;
+          padding: 5px 20px 5px 0;
+          margin: 30px 0 0; }
+          .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__description {
+            margin-bottom: 10px; }
+          .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person {
+            width: 98%;
+            text-align: left;
+            float: left;
+            position: relative;
+            border-radius: 4px;
+            margin: 0;
+            padding: 0; }
+            .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person .time-table-section__event__person__avatar {
+              width: 100px;
+              line-height: 40px;
+              float: left;
+              margin-right: 20px;
+              border-radius: 300px;
+              overflow: hidden;
+              display: block; }
+              .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person .time-table-section__event__person__avatar img {
+                height: 100px;
+                width: auto;
+                margin: 0 auto;
+                border: 2px solid rgba(0, 0, 0, 0.1);
+                border-radius: 300px; }
+            .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person h2 {
+              font-size: 1rem;
+              font-weight: 700;
+              margin: 8px 0 3px; }
+            .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person .time-table-section__event__person__title {
+              margin-bottom: 5px; }
+            .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person .time-table-section__event__person__bio {
+              margin-left: 120px;
+              margin-bottom: 20px; }
+              @media only screen and (max-width: 480px) {
+                .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person .time-table-section__event__person__bio {
+                  margin-left: auto; } }
+
+.main-footer {
+  margin-top: 3rem;
+  position: absolute; }
+  .main-footer .main-footer__image {
+    background: url("../img/setcon2016_hero.png") center no-repeat;
+    height: 300px;
+    width: 100%; }
+    @media only screen and (max-width: 780px) {
+      .main-footer .main-footer__image {
+        height: 200px; } }
+  .main-footer .main-footer__sloping-block {
+    position: relative;
+    z-index: 2; }
+  .main-footer .main-footer__info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    font-size: 0.875rem;
+    height: 50px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .main-footer .main-footer__info .main-footer__info__email {
+      color: #fff;
+      padding-left: 5px; }
 /*# sourceMappingURL=main.css.map */
