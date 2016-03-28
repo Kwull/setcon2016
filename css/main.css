@@ -747,8 +747,6 @@ img {
     background: #63051f; }
 
 .time-table-section {
-  height: 100px;
-  margin-top: 3rem;
   padding: 0 10%; }
   @media only screen and (max-width: 1280px) {
     .time-table-section {
@@ -854,41 +852,40 @@ img {
                 .time-table-section .time-table-section__container .time-table-section__container_inner .time-table-section__event__details__container .time-table-section__event__details .time-table-section__event__person .time-table-section__event__person__bio {
                   margin-left: auto; } }
 
-.main-footer {
-  margin-top: 3rem;
-  position: absolute; }
-  .main-footer .main-footer__image {
-    background: url("../img/setcon2016_hero.png") center no-repeat;
-    height: 300px;
-    width: 100%; }
-    @media only screen and (max-width: 780px) {
-      .main-footer .main-footer__image {
-        height: 200px; } }
-  .main-footer .main-footer__sloping-block {
-    position: relative;
-    z-index: 2; }
-  .main-footer .main-footer__info {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+.main-footer .main-footer__image {
+  background: url("../img/setcon2016_hero.png") center no-repeat;
+  height: 300px;
+  width: 100%; }
+  @media only screen and (max-width: 780px) {
+    .main-footer .main-footer__image {
+      height: 200px; } }
+
+.main-footer .main-footer__sloping-block {
+  position: relative;
+  z-index: 1; }
+
+.main-footer .main-footer__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 0.875rem;
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main-footer .main-footer__info .main-footer__info__email {
     color: #fff;
-    font-size: 0.875rem;
-    height: 50px;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .main-footer .main-footer__info .main-footer__info__email {
-      color: #fff;
-      padding-left: 5px; }
+    padding-left: 5px; }
 /*# sourceMappingURL=main.css.map */
