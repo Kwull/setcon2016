@@ -1,6 +1,6 @@
 .main-footer {
-    margin-top: 3rem;
-    position: absolute;
+   // margin-top: 3rem;
+  //  position: absolute;
 
     .main-footer__image {
         background: url('../img/setcon2016_hero.png') center no-repeat;
@@ -14,7 +14,7 @@
 
     .main-footer__sloping-block {
         position: relative;
-        z-index: $z-index-high;
+        z-index: $z-index-normal;
     }
 
     .main-footer__info {
