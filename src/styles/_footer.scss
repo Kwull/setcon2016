@@ -1,32 +1,32 @@
 .main-footer {
-  position: absolute;
-  margin-top: 3rem;
+    margin-top: 3rem;
+    position: absolute;
 
-  .main-footer__image {
-    background: url('../img/setcon2016_hero.png') center no-repeat;
-    height: 300px;
-    width: 100%;
+    .main-footer__image {
+        background: url('../img/setcon2016_hero.png') center no-repeat;
+        height: 300px;
+        width: 100%;
 
-    @media #{$media-780} {
-      height: 200px;
+        @media #{$media-780} {
+            height: 200px;
+        }
     }
-  }
-  
-  .main-footer__sloping-block {
-      position: relative;
-      z-index: $z-index-high;
-  }
 
-  .main-footer__info {
-    @include flex-row;
-    height: 50px;
-    justify-content: center;
-    color: $white;
-    font-size: $font-size-small;
-    
-    .main-footer__info__email {
-        padding-left: 5px;
+    .main-footer__sloping-block {
+        position: relative;
+        z-index: $z-index-high;
+    }
+
+    .main-footer__info {
+        @include flex-row;
         color: $white;
+        font-size: $font-size-small;
+        height: 50px;
+        justify-content: center;
+
+        .main-footer__info__email {
+            color: $white;
+            padding-left: 5px;
+        }
     }
-  }
 }
