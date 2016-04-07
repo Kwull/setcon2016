@@ -821,7 +821,32 @@ img {
 .main-footer .main-footer__image {
   background: url("../img/setcon2016_hero.png") center no-repeat;
   height: 300px;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
+  .main-footer .main-footer__image .logos {
+    padding-top: 2%; }
+    @media only screen and (max-width: 780px) {
+      .main-footer .main-footer__image .logos {
+        padding-top: 0%; } }
+    @media only screen and (max-width: 480px) {
+      .main-footer .main-footer__image .logos {
+        padding-top: 10%; } }
+  .main-footer .main-footer__image .epam_logo {
+    height: auto;
+    width: 200px; }
+    @media only screen and (max-width: 480px) {
+      .main-footer .main-footer__image .epam_logo {
+        width: 150px; } }
+  .main-footer .main-footer__image img {
+    vertical-align: middle; }
+  .main-footer .main-footer__image .jetbrains_logo {
+    height: auto; }
+    @media only screen and (max-width: 780px) {
+      .main-footer .main-footer__image .jetbrains_logo {
+        width: 200px; } }
+    @media only screen and (max-width: 480px) {
+      .main-footer .main-footer__image .jetbrains_logo {
+        width: 150px; } }
   @media only screen and (max-width: 780px) {
     .main-footer .main-footer__image {
       height: 200px; } }
