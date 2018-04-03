@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SETCON BREST 2016</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/bundle.js"></script>
+</head>
+
+<body onload="mapModule.initMap()">
+    <header class="main-header background-white main-diagonal--bottom-white" id="mobile-menu">
+        <div class="main-header__wrapper">
+            <div class="main-header__title">
+                <a href="" class="main-header__title__logo-link">
+                    <img src="img/setcon2016_logo.png" alt="SETCON small logo">
+                </a>
+            </div>
+            <nav class="menu-list">
+                <ul class="menu-list__items">
+                    <li class="menu-list__item menu-list__item--active">
+                        <a href="http://goo.gl/forms/MUWG0kIzK4" target="_blank" class="menu-list__item__link">Регистрация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="event-section">
+        <div class="event-section__content">
+            <img src="img/setcon2016_biglogo.png" alt="SETCON Huge logo" class="event-section__content__logo">
+            <div class="event-section__content__text">
+                <p>23 Апреля</p>
+                <p>г. Брест, ул. Л-та Рябцева, 124</p>
+            </div>
+        </div>
+    </section>
+    <section class="participations-section background-dark-red counter-diagonal--top-dark-red">
+        <div class="participations-section--wrapper col-1">
+            <div class="participations-section__row col-1-2 mob-1">
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">2</p>
+                    <p class="participations-section__text">потока</p>
+                </div>
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">150</p>
+                    <p class="participations-section__text">участников</p>
+                </div>
+            </div>
+            <div class="participations-section__row col-1-2 mob-1">
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">10</p>
+                    <p class="participations-section__text">докладов</p>
+                </div>
+                <div class="participations-section__item">
+                    <p class="participations-section__item__number">12</p>
+                    <p class="participations-section__text">экспертов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="conference-description background-white counter-diagonal--top-white main-diagonal--top-white">
+        <p class="conference-description__text">Ежегодная профессиональная инженерная конференция, цель которой создать площадку для активного общения и обмена знаниями. Эксперты из разных сфер IT делятся опытом разработки и имплементации программных продуктов и сервисов.</p>
+    </section>
+    <section class="venue-section background-rose">
+        <div class="venue-section__map" >
+            <div class="venue-section__map__action" id="map"></div>
+        </div>
+        <div class="venue-section__description">
+            <p class="venue-section__description__item">iBC Бизнес-центр - Intelligent Business Center. </p>
+            <p class="venue-section__description__item">Расположен в тихом и живописном месте Бреста, в здании кафе-клуба 11:11, по адресу ул. Л-та Рябцева, 124.</p>
+            <p class="venue-section__description__item">Вход со стороны ул. Л-та Рябцева.</p>
+        </div>
+    </section>
+    <section class="start-time-section background-dark-red counter-diagonal--top-dark-red">
+        <p class="start-time-section__text">Начало в 11.00</p>
+    </section>
+    
+    <section class="time-table-section background-white counter-diagonal--top-white">
+
+        <h3 class="registration">11:00</h3> <!-- registration -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event red-hall">Красный зал</span>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event green-hall">Зеленый зал</span>
+                </div>
+                <div style="clear: both"></div>
+                <span class="time-table-section__event break"><a href="https://www.facebook.com/media/set/?set=oa.1017176005031360&type=1" target="_blank">Регистрация участников</a></span>
+            </div>
+        </div>
+
+        <h3>11:30</h3> <!-- opening -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=LoEpxGad" target="_blank">Открытие конференции</a></span>
+                <div class="time-table-section__event__details__container">
+                    <div class="time-table-section__event__details">
+                        <!-- speakers -->
+                        <div>
+                            <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/uladzimir_kazakevich.jpg" alt="avatar for Uladzimir Kazakevich">
+                                </span>
+                                <h2>Владимир Казакевич</h2>
+                                <div class="time-table-section__event__person__bio">
+                                    Задумывались ли вы зачем мы, разработчики, разрабатываем различный Софт? Выбираете ли вы технологии и фреймворки, основываясь на количестве форков и звездочек в GitHub?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>12:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=dJ85dAaW" target="_blank">Что такое высокая доступность и как это приготовить?</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/mikhail_liulkovich.jpg" alt="avatar for mikhail liulkovich">
+                                </span>
+                                    <h2>Михаил Люлькович</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Каждый день бизнес теряет миллионы долларов всего лишь на том, что их сайт временно стал недоступен. А многие с этим борются и успешно, но тем не менее мы с вами из года в год мы все чаще слышим слова Availability, Fault tolerance и другие. Давайте же разберемся с тем, что это такое и какие основные инструменты есть, чтобы с этим недугом бороться?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=Koe6qpRq" target="_blank">Have you Dockerized?</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/aliaksei_zharnasek.jpg" alt="avatar for Aliaksei Zharnasek">
+                                </span>
+                                    <h2>Алексей Жерносек</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Что такое Docker? Чем он отличается от AWS/Vagrant/Chef/Azure? Чем оно мне поможет? Ненормальное использование контейнеров :)
+                                        <br><br>
+                                        Keywords: docker, container, virtualization, microservices
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>12:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>13:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=PJ6leXoX" target="_blank">BigData от концепции к промышленному применению</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/ilya_lapitan.jpg" alt="avatar for ilya lapitan">
+                                </span>
+                                    <h2>Илья Лапитан</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Каждый день мы производим 2,5 триллиона байт данных. Примерно 90% данных в современном мире было создано за последние два года. Данные поступают отовсюду: датчики, финансовые транзакции, социальные медиа,  умная бытовая техника.
+                                        <br><br>
+                                        Для обработки этих данных была разработана куча различных технологий: Hadoop, Hive, Kafka, Storm и другие. Давайте подробнее разберемся, как использовать эти технологии для перехода от реализации концепции к промышленному применению.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=noZ94Xaq" target="_blank">Эффективные подходы к тестированию web-сервисов</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/uladzimir_ramaniuk.jpg" alt="avatar for Uladzimir Ramaniuk">
+                                </span>
+                                    <h2>Владимир Романюк</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Тестирование web-сервисов - важная часть интеграционного тестирования на web-проектах. Существуют различные подходы к тестированию web-сервисов, выбор каждого из них зависит от специфики поставленной задачи. В своём докладе я расскажу, что такое web-сервисы, как их тестировать и как это тестирование можно автоматизировать.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>13:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>14:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=na2DpvRY" target="_blank">Безусловное программирование</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/aliaksandr_orgish.jpg" alt="avatar for aliaksandr_orgish">
+                                </span>
+                                    <h2>Александр Оргиш</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Можно ли писать программу без ветвлений? Так ли обязательны условия для алгоритмов fizz-buzz и крестики-нолики? Попробуем научиться мыслить "прямолинейно".
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=PaKAggR0" target="_blank">Тестирование Производительности</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/dzmitry_dzemidziuk.jpg" alt="avatar for dzmitry dzemidziuk">
+                                    <img src="img/krystsina_bakatsiuk.jpg" alt="avatar for krystsina bakatsiuk">
+                                </span>
+                                    <h2>Дмитрий Демидюк, Кристина Бокатюк</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Что делать если вы обычный специалист в области функционального тестирования, заказчик просит протестировать производительность веб-приложения? Какие существуют основные подходы к тестированию производительности веб-приложений и какой из них лучше выбрать? Какие существуют типы нагрузочных тестов?
+                                        <br><br>
+                                        В докладе будет рассмотрено:<br>
+                                        - Server-side тестирование производительности<br>
+                                        - UI-side тестирование производительности<br>
+                                        - Примеры скриптов в JMeter<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>14:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>15:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <div class="time-table-section__event__red-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=9oXQw4Rw" target="_blank">Пакуем Web как Боги</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/sergey_arzamasov.jpg" alt="avatar for sergey arzamasov">
+                                </span>
+                                    <h2>Сергей Арзамасов</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Современный frontend немыслим без автоматических средств сборки, которые позволяют забыть о рутинных действиях, тем самым ускорить процесс разработки и уменьшить нашу головную боль. Однако, существет большое количество инструментов, которые решают данные проблемы. Webpack является одним из таких инструментов. Что такое Webpack? Где и когда его нужно применять? Какие у него преимущества перед конкурентами? Зачем мне Webpack, если я использую Grunt/Gulp? На эти и другие вопросы я постараюсь ответить.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-table-section__event__green-hall">
+                    <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=2Rd7Oyod" target="_blank">Universal Windows Platform (UWP) везде!</a></span>
+                    <div class="time-table-section__event__details__container">
+                        <div class="time-table-section__event__details">
+                            <div>
+                                <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/uladzislau_basin.jpg" alt="avatar for uladzislau basin">
+                                </span>
+                                    <h2>Влад Басин</h2>
+                                    <div class="time-table-section__event__person__bio">
+                                        Майкрософт в последнее время все активнее продвигает идею приложений, которые могут запускаться везде - от браслетов, телефонов и планшетов до настольных компьютеров и очков дополненной реальности HoloLens. Мы уже сейчас можем вести разработку в таком ключе, но вопросов по умолчанию много: как адаптируются приложения по разные устройства, все ли так радужно и хорошо, удобно ли так разрабатывать или лучше по старинке? Давайте вместе ответим на эти и другие вопросы!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>15:50</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Кофе - пауза</span>
+            </div>
+        </div>
+
+        <h3>16:00</h3>
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event"><a href="https://videoportal.epam.com/video/iframe.html?resolution=1280x720&video=nJL7nER9" target="_blank">Ленивая история про ленивый JavaScript</a></span>
+                <div class="time-table-section__event__details__container">
+                    <div class="time-table-section__event__details">
+                        <div>
+                            <div class="time-table-section__event__person">
+                                <span class="time-table-section__event__person__avatar">
+                                    <img src="img/denis_vlassenko.jpg" alt="avatar for denis vlassenko">
+                                </span>
+                                <h2>Дэн Влассенко</h2>
+                                <div class="time-table-section__event__person__bio">
+                                    Бытует мнение, что программисты очень ленивы. Не каждый ли из них всю жизнь ищет свой философский камень – супер-платформу для супербыстрой разработки супер-приложений, имея которую стало бы возможно писать меньше, но создавать больше? И не найдя, разрабатывает свою.<br><br>
+                                    Потом наступает особый день, великая мудрость озаряет их разум и ленивые программисты начинают создавать ленивые алгоритмы; они потребляют меньше ресурсов и реже нуждаются в оптимизации. И прогресс продолжается.<br><br>
+                                    Хотя стандартная модель вычислений в JavaScript отнюдь не ленива, незначительная трансформация мышления, парочка правильных библиотек и крупица хитрости достаточны для того, чтобы несколько разгрузить центральный процессор.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>17:00</h3> <!-- break -->
+        <div class="time-table-section__container">
+            <div class="time-table-section__container_inner">
+                <span class="time-table-section__event break">Закрытие конференции и After party в кафе-клубе 11:11</span>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="main-footer">
+        <div class="main-footer__sloping-block main-diagonal--bottom-white"></div>
+        <div class="main-footer__image">
+            <div class="logos">
+                <a href="https://www.epam.com/" target="_blank"><img src="img/epam_logo.png" class="epam_logo"></a>
+                <a href="https://www.jetbrains.com/" target="_blank"><img src="img/logo_jetbrains.png" class="jetbrains_logo"></a>
+            </div>
+        </div>
+        <div class="main-footer__info background-dark-red counter-diagonal--top-dark-red">
+            <span>© 2016. SETCON Brest. | Пишите нам</span>
+            <a class="main-footer__info__email" href="mailto:uladzimir_kazakevich@epam.com">uladzimir_kazakevich@epam.com</a>
+        </div>
+    </footer>
+</body>
+</html>
